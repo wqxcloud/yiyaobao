@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+//wesker add GreenDao start
+apply plugin: 'org.greenrobot.greendao'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+greendao {
+    schemaVersion 1
+    daoPackage 'com.yiyaobao.dao'//1
+    targetGenDir 'src/main/java'
+}
+//wekser add GreenDao end
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.yiyaobao"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+//            keyAlias 'wqx'
+//            keyPassword '123456'
+//            //storeFile file('D:/adt/keystore.jks')
+//            storeFile file('keystore.jks')
+//            storePassword '123456'
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.github.promeg:tinypinyin:2.0.1'
+    compile 'net.zetetic:android-database-sqlcipher:3.4.0'
+    //GreenDao start
+    compile'org.greenrobot:greendao:3.2.2'
+    //GreenDao end
+    testCompile 'junit:junit:4.12'
+}

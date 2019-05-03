@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- properties for LetterView -->
+    <declare-styleable name="LetterView">
+        <attr name="rootBgColor" format="color|reference" />
+        <attr name="rootTouchBgColor" format="color|reference" />
+        <attr name="letterBgColor" format="color|reference" />
+        <attr name="letterTouchBgColor" format="color|reference" />
+        <attr name="letterTextColor" format="color|reference" />
+        <attr name="letterTextTouchBgColor" format="color|reference" />
+        <attr name="letterTextSize" format="dimension|reference" />
+    </declare-styleable>
+    <declare-styleable name="CharIndexView">
+        <!-- 	banner背影色  	 -->
+        <!-- 索引字大小 -->
+        <attr name="indexTextSize" format="dimension"/>
+        <!-- 字颜色 -->
+        <attr name="charTextColor" format="color"/>
+        <!-- 索引字颜色 -->
+        <attr name="indexTextColor" format="color"/>
+    </declare-styleable>
+</resources>

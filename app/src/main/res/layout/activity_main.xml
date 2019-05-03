@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStart="0dp"
+        app:titleTextAppearance="@style/Toolbar_TextAppearance_White"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--右侧索引-->
+
+        <com.yiyaobao.search.CharIndexView
+            android:id="@+id/iv_main"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:indexTextSize="16sp"
+            app:charTextColor="#353535"
+            app:indexTextColor="#a1a1a1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+        <!--中间悬浮字体-->
+        <TextView android:id="@+id/tv_index"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:textColor="#1b1b1b"
+            android:textSize="28sp"
+            android:visibility="invisible"
+            android:text="A"
+            android:gravity="center"
+            android:background="@drawable/bg_index"/>
+    </RelativeLayout>
+
+</LinearLayout>

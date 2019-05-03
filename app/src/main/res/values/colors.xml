@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="base_background">#f0f0f0</color>
+    <drawable name="charIndexColor">#33000000</drawable>
+    <color name="charIndexColor">#33000000</color>
+    <color name="changShangColor">#ed3e3838</color>
+    <color name="nameColor">#000000</color>
+    <color name="searchresult">#ed48a464</color>
+</resources>
