@@ -29,10 +29,10 @@ android {
     buildTypes {
         release {
 //            keyAlias 'wqx'
-//            keyPassword '123456'
-//            //storeFile file('D:/adt/keystore.jks')
-//            storeFile file('keystore.jks')
-//            storePassword '123456'
+//            keyPassword ''
+//            //storeFile file('D:/adt/.jks')
+//            storeFile file('.jks')
+//            storePassword ''
 
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
